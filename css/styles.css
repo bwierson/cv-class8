@@ -10,7 +10,9 @@ body {
 	color: #202030;
 	background-color: #f8f8fc;
 }
-.orange-text {color: #C07000;}
+.orange-text {color: #C07000;
+font-weight: bold; 
+text-shadow: 2px 2px 5px rgba(0,0,0,0.2);}
 
 /* Styles for custom classes in the document. (There are more, try to find them out!) */
 
