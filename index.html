@@ -13,11 +13,13 @@
 
     <!-- Links to our additional CSS styles -->
     <link rel="stylesheet" href="css/styles.css">
-	  
-	  
+
     <title>Isabella Wierson's Resumé</title>
   </head>
   <!-- End of the head -->
+
+  <!-- Start of the body, which contains everything visible on the page -->
+  <body class="d-flex flex-column h-100 justify-content-between">
 
     <!--
       We use a Bootstrap container to align contents.
@@ -41,15 +43,14 @@
             "w-100" makes sure the image takes the full width of the column it's in
             "rounded-circle" cuts a circle around the image
           -->
-        
-	    <img src="images/image 1 .jpeg" width="100" alt=""/> </div>
+          <img class="w-100 rounded-circle my-3" src="images/bellaphoto.jpeg" alt="portrait of Isabella Wierson" width="160">
+        </div>
         <!--
           A container to wrap around your name and tagline. Full-width at small size, then columns of increasing size.
         -->
         <div class="col-12 col-sm-8 col-md-9 col-lg-10 my-3 header-content">
-          <h1 class="orange-text" >Isabella Wierson</h1>
-		
-          <h5 class="fst-italic tagline">Expert in creative storytelling.</h5>
+          <h1 class="fw-bolder custom-text-color">Isabella Wierson </h1>
+          <h5 class="fst-italic tagline"> Expert in creative storytelling.</h5>
         </div>
       </header>
 
@@ -58,76 +59,80 @@
         Biography and other details will be on top of each other at sizes XS and S, then next to each other.
         Use the "flex-row-reverse" class here to swap the columns around.
       -->
-      <div class="row resume-bottom d-flex flex-row">
+      <div class="row resume-bottom">
 
         <!--
           <main> is another semantic element. It will contain biographical info (professional experience and education).
         -->
         <main class="col-md-7 col-lg-8 col-xl-9 resume-main">
 
-         <!-- 
+          <!--
             <section> is yet another semantic element. The first one is for professional experience.
-		   
+          -->
           <section class="my-3 biography-section">
             <h2>Professional Experience</h2>
-            <!--↩   
+            <!--
               Each list item (li) in the unordered list (ul) below will be one job.
               "list-unstyled" is a class that hides the bullet points of a list.
             -->
             <ul class="biography-list list-unstyled">
-				<main>  
-  <h2>Professional Experience</h2> 
+
               <!-- Top item (generally the latest or most relevant) in professional experience -->
               <li class="biography-item row mb-2">
                 <!-- We're using a grid inside a grid so we can align logos and text -->
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-				  <img src="images/Sea-Life-Logo.svg.png" width="80"  alt="Sea Life logo"/> </div>  
-				<div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
-    <h4>Sea Life Sales Photographer</h4>
-    <h5>September 2022 - May 2023</h5>
-    <!-- Use the list below to talk about your achievements -->
-    <ul class="biography-details list-unstyled">
-      <li>Capturing high quality photos of guests during their visit&nbsp; &nbsp;</li>
-      <li>Meet or exceed sales targets by using  communication and persuasion skills.</li>
-      <li>Maintain a professional&nbsp; attitude in a fast-paced environment.</li>
-    </ul>
-    </div>
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/Sea-Life-Logo.svg.png" alt="Company logo" width="80">
+                </div>
+                <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
+                  <h4>Sea Life Sales Photographer</h4>
+                  <h5>September 2022–May 2023</h5>
+                  <!-- Use the list below to talk about your achievements -->
+                  <ul class="biography-details list-unstyled">
+                    <li>Captured high quality photos of guests during their visit</li>
+                    <li>Exceeded sales targets by using persuasion and communication skills&nbsp;</li>
+                    <li>Maintained a proffesional attitude in a fast-paced environment</li>
+                  </ul>
+                </div>
               </li>
 
               <!-- 2nd item in professional experience -->
               <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
                 <!-- We're using a grid inside a grid so we can align logos and text -->
-                  
-			    <img src="images/Flag_of_the_Red_Cross.svg.png" width="80"  alt=""/> </div>
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/Flag_of_the_Red_Cross.svg.png" alt="Company logo" width="80">
+                </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h4>Minnekahda Country Club Lifeguard</h4>
-                  <h5>May-September 2021&nbsp;</h5>					
+                  <h5>May - September 2021&nbsp;</h5>
                   <!-- This entry doesn't have a list of achievements, but you can copy-paste the one from above -->
-					 <ul class="biography-details list-unstyled">
+					  <ul class="biography-details list-unstyled">
                     <li>Acquired Red Cross Certification&nbsp;</li>
-                    <li>Identify and respond to hazardous situations, including overcrowding, rough play, and unsafe diving.</li>
-                    <li>Monitor swimmers continuously to ensure a safe environment, preventing accidents and enforcing facility rules.</li>
-                  </ul>
+                    <li>Identified and responded to hazardous situations</li>
+                    <li>Monitored swimmers continuously to ensure a safe environment.&nbsp;</li>
+                  </ul> 
                 </div>
               </li>
+
+            </ul>
+          </section>
+
           <!-- We're done with jobs, let's move on to schools -->
 
-  <section class="my-3 biography-section">
+          <section class="my-3 biography-section">
             <h2>Education</h2>
             <ul class="biography-list list-unstyled">
 
               <!-- Top item in education. And by "top", I mean a Bachelor in Creative Business at BUas. -->
               <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/logo-buas.svg" alt="School logo" width="150">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/logo-buas.svg" alt="School logo" width="120">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h4>BA in Creative Business, Breda University of Applied Sciences</h4>
                   <h5>2023 –&nbsp;now</h5>
                   <!-- Use the list below to talk about minors, exchanges, extra-curricular activities. -->
                   <ul class="biography-details list-unstyled">
-                    <li>Member of&nbsp; BUas TV Department</li>
+                    <li>Member of the BUas TV department</li>   
                     <li>Exchange with Ateneo de Manila University 2025</li>
                   </ul>
                 </div>
@@ -136,12 +141,13 @@
               <!-- 2nd item in education -->
               <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-               <img src="images/Edina_High_School_logo.jpg" width="80"  alt=""/> </div>
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/Edina_High_School_logo.jpg" alt="School logo" width="80">
+                </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h4>High School Diploma, Edina High School</h4>
-                  <h5>2019-2023</h5>
+                  <h5>2023</h5>
                   <ul class="biography-details list-unstyled">
-                    <li>Graduated Cum Laude&nbsp;</li>
+                    <li>Graduated Cum Laude</li>
                   </ul>
                 </div>
               </li>
@@ -149,8 +155,9 @@
           </section>
 
           <!-- This is the end of the "Education" section -->
-				
-		</main>
+
+        </main>
+
         <!--
           We're done with the first column.
           We now move on to the column with contact details, languages and other skills
@@ -171,24 +178,29 @@
               <li class="contact-item">
                 <a class="d-flex align-items-center" href="mailto:email@buas.nl" target="_blank">
                   <img class="contact-icon" src="images/icons/envelope.svg" alt="Email">
-                230209@buas.nl </a>
+                  230209@buas.nl
+                </a>
               </li>
               <li class="contact-item">
-                <a class="d-flex align-items-center" href="https://facebook.com/bwiersonn" target="_blank">
+                <a class="d-flex align-items-center" href="https://facebook.com/bwiersonn/" target="_blank">
                   <img class="contact-icon" src="images/icons/facebook.svg" alt="Facebook">
                   Facebook Profile
                 </a>
               </li>
               <li class="contact-item">
                 <a class="d-flex align-items-center" href="https://github.com/bwierson" target="_blank">
-			    <img src="images/Octicons-mark-github.svg" width="20" alt="Github logo"/> 
-					GitHub Profile </a>
+                  <img class="contact-icon" src="images/icons/github.svg" alt="LinkedIn">
+                  GitHub Profile
+                </a>
               </li>
               <li class="contact-item">
-                <a class="d-flex align-items-center" href="https://www.linkedin.com/in/isabella-wierson/" target="_blank">
-		      <img src="images/linkedin copy.png" width="20" alt="LinkedIn Logo"/> 
-					LinkedIn Profile</a>
-				</li>
+                <a class="d-flex align-items-center" href="https://www.linkedin.com/in/isabella-wierson
+
+" target="_blank">
+                  <img class="contact-icon" src="images/linkedin copy.png" alt="Mobile Phone">
+                  LinkedIn
+                </a>
+              </li>
             </ul>
           </section>
 
@@ -199,7 +211,7 @@
             <!-- Each item in the list is a language. Modify, add or remove depending on what you speak -->
             <ul class="language-list list-unstyled">
               <li class="language-item d-flex mb-1">
-                <h5 class="language-name w-50">English&nbsp;</h5>
+                <h5 class="language-name w-50">English</h5>
                 <div class="language-level w-50 border border-info border-2 position-relative">
                   <!-- The div below is a progress bar. Choose between w-25, w-50, w-75 and w-100 to show your level of fluency -->
                   <div class="language-progress position-absolute bg-warning h-100 w-100"></div>
@@ -209,8 +221,8 @@
               <li class="language-item d-flex mb-1">
                 <h5 class="language-name w-50">Portuguese</h5>
                 <div class="language-level w-50 border border-info border-2 position-relative">
-                  <!-- The div below is a progress bar. Choose between w-25, w-50, w-75 and w-100 to show your level of fluency --> 
-                  <div class="language-progress position-absolute bg-warning h-100 style= w-100"></div>
+                  <!-- The div below is a progress bar. Choose between w-25, w-50, w-75 and w-100 to show your level of fluency -->
+                  <div class="language-progress position-absolute bg-warning h-100 w-100"></div>
                   <h6 class="position-absolute w-100 text-center top-0 py-1">Fluent</h6>
                 </div>
               </li>
@@ -238,12 +250,9 @@
           <section class="my-3 aside-section">
             <h2>Other Skills</h2>
             <ul class="skill-list list-unstyled">
-              <li class="skill-item">Team player</li>
-              <li class="skill-item">Adobe Premiere Pro</li>
               <li class="skill-item">Adobe Illustrator</li>
-				<li class="skill-item">Logic Pro</li>
-              <li class="skill-item">Excel Spreadsheets</li>
-              <li class="skill-item">CPR</li>
+              <li class="skill-item">Adobe Premiere Pro</li>
+              <li class="skill-item">Logic Pro</li>
             </ul>
           </section>
 
@@ -252,19 +261,21 @@
           <section class="my-3 aside-section">
             <h2>Interests &amp; Hobbies</h2>
             <ul class="skill-list list-unstyled">
-              <li class="skill-item">Songwriting&nbsp;</li>
-				 <li class="skill-item">Piano and Guitar&nbsp;&nbsp;</li>
+              <li class="skill-item">Songwriting</li>
               <li class="skill-item">Cycling</li>
             </ul>
           </section>
 
         </aside>
-  
+      </div>
+    </div>
+
     <!-- And now, a footer! -->
     <footer class="bg-dark mt-sm-5 py-4 text-light">
       <p class="container text-end">
         Created as part of the <a href="https://www.buas.nl/en/programmes/creative-business" target="_blank">Bachelor of Creative Business at Breda University of Applied Sciences.</a>
       </p>
-    </footer>	
-  
+    </footer>
+
+  </body>
 </html>
